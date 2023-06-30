@@ -1,0 +1,26 @@
+# Path: ~/ansible/playbook.yml
+
+---
+- hosts:  lb_servers
+  name: Configure load balance servers
+  gather_facts: no
+  become: yes
+  tasks:
+  - include_role:
+      name: nginx_lb
+
+- hosts:  web_servers
+  name: Configure web servers
+  gather_facts: no
+  become: yes
+  tasks:
+  - include_role:
+      name: tomcat
+
+- hosts:  db_servers
+  name: Configure database servers
+  gather_facts: no
+  become: yes
+  tasks:
+  - include_role:
+      name: mongodb
