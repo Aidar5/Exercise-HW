@@ -1,5 +1,6 @@
 
 # Clone git repository to the local machine
+git clone https://github.com/Aidar5/Exercise-HW.git
 
 ----------------------------------------
 # Install Terraform
