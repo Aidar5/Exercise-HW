@@ -7,7 +7,7 @@ Accounting:
     lb_servers:
       hosts:
         LB:
-          ansible_host: 54.213.90.177
+          ansible_host: 35.90.12.107
     web_servers:
       hosts:
         WEB:
