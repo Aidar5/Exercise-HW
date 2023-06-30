@@ -26,7 +26,7 @@ pip install ansible
 
 # Substitute Public IPs of newly created AWS instances
 cd ../ansible
-vi (or nano) playbook.yml
+vi (or nano) inventory.yml
 
 # Run ansible playbook with "-i inventory.yml" or create "~/.ansible.cfg file" and copy the content from the repo to define new default inventory path.
 ansible-playbook playbook.yml -i inventory.yml
