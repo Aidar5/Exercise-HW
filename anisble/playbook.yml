@@ -1,5 +1,3 @@
-# Path: ~/ansible/playbook.yml
-
 ---
 - hosts:  lb_servers
   name: Configure load balance servers
