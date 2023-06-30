@@ -1,5 +1,3 @@
-# Path: ~/ansible/inventory.yml
-
 Accounting:
   children:
     db_servers:
