@@ -5,15 +5,15 @@ Accounting:
     db_servers:
       hosts:
         DB:
-          ansible_host: 54.149.61.34
+          ansible_host: 34.219.156.186
     lb_servers:
       hosts:
         LB:
-          ansible_host: 35.86.76.248
+          ansible_host: 52.41.21.97
     web_servers:
       hosts:
         WEB:
-          ansible_host: 35.91.97.199
+          ansible_host: 35.85.151.15
   vars:
     ansible_ssh_private_key_file: "../terraform/linux-key.pem"
     ansible_ssh_common_args: -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
