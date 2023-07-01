@@ -25,7 +25,7 @@ terraform apply
 pip install ansible
 
 # Substitute Public IPs of newly created AWS instances
-cd ../ansible
+cd ../ansible/
 vi (or nano) inventory.yml
 
 # Run ansible playbook with "-i inventory.yml" or create "~/.ansible.cfg file" and copy the content from the repo to define new default inventory path.
