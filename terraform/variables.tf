@@ -19,18 +19,6 @@ variable "ami_id" {
         default = "ami-0688ba7eeeeefe3cd"
 }
 
-variable "ip_lb" {
-        default = "192.168.0.11"
-}
-
-variable "ip_web" {
-        default = "192.168.0.12"
-}
-
-variable "ip_db" {
-        default = "192.168.0.13"
-}
-
 variable "lb_instance" {
   type = map
   default = {
