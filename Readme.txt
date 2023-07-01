@@ -9,7 +9,7 @@ wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/sha
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update && sudo apt install terraform
 
-# Create bash environment variable to keep key values save:
+# Create bash environment variable to keep key values save. KeyId - TF_VAR_env_ak, SecretKey - TF_VAR_env_sk
 export TF_VAR_env_ak=*key_value*
 export TF_VAR_env_sk=*key_value*
 
