@@ -1,3 +1,22 @@
+# Access bash env variables
+variable "env_ak" {
+  type = string
+  sensitive = true
+}
+
+variable "env_sk" {
+  type = string
+  sensitive = true
+}
+
+# Define AWS provider
+provider "aws" {
+    access_key = var.env_ak
+    secret_key = var.env_sk
+    region = "us-west-2"
+}
+
+
 # Create the VPC
 resource "aws_vpc" "app_vpc" {
   cidr_block = "${var.cidr_block_vpc}"
